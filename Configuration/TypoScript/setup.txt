@@ -1,0 +1,79 @@
+
+plugin.tx_t3cmsponsor {
+	view {
+		templateRootPath = {$plugin.tx_t3cmsponsor.view.templateRootPath}
+		partialRootPath = {$plugin.tx_t3cmsponsor.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_t3cmsponsor.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = 1
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_t3cmsponsor._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-t3cmsponsor table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-t3cmsponsor table th {
+		font-weight:bold;
+	}
+
+	.tx-t3cmsponsor table td {
+		vertical-align:top;
+	}
+
+	.home #sponsor .slider-sponsor ul li .item span .col-platinum {
+	    background-color: #E5E4E2;
+	}
+	.home #sponsor .slider-sponsor ul li .item span .col-gold {
+    	background-color: #FFD700;
+    }
+    .home #sponsor .slider-sponsor ul li .item span .col-silver {
+       background-color: #C0C0C0;
+    }
+    .home #sponsor .slider-sponsor ul li .item span .col-silver {
+        background-color: #CD7F32;
+    }
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+)
+
+lib.sponsorslider = USER
+lib.sponsorslider {
+   userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+   extensionName = T3cmsponsor
+   pluginName = Homepage
+   vendorName = T3CM
+   controller = Sponsor
+   action = slider
+      switchableControllerActions {
+      Sponsor {
+         1 = slider
+      }
+   }
+   settings =< plugin.tx_t3cmsponsor.settings
+   persistence =< plugin.tx_t3cmsponsor.persistence
+   view =< plugin.tx_t3cmsponsor.view
+}

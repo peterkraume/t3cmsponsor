@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-25T19:11:30Z" product-name="t3cmsponsor">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>Sponsor name</source>
+			</trans-unit>
+			<trans-unit id="logo.description">
+				<source>Sponsor Logo</source>
+			</trans-unit>
+			<trans-unit id="status.description">
+				<source>Sponsor Status</source>
+			</trans-unit>
+			<trans-unit id="url.description">
+				<source>Sponsor URL</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

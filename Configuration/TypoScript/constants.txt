@@ -1,0 +1,15 @@
+
+plugin.tx_t3cmsponsor {
+	view {
+		# cat=plugin.tx_t3cmsponsor/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:t3cmsponsor/Resources/Private/Templates/
+		# cat=plugin.tx_t3cmsponsor/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:t3cmsponsor/Resources/Private/Partials/
+		# cat=plugin.tx_t3cmsponsor/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:t3cmsponsor/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_t3cmsponsor//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

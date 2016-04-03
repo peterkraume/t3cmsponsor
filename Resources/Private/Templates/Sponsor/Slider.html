@@ -1,0 +1,51 @@
+<div class="slider-sponsor">
+    <ul>
+        <f:for each="{sponsors}" as="sponsor">
+            <li>
+                <div class="item">
+                    <a href="{sponsor.url}">
+                        <f:image src="{sponsor.logo.uid}" alt="{sponsor.name}" treatIdAsReference="1" />
+                        <f:switch expression="{sponsor.status}">
+                            <f:case value="0"><span class="fa fa-star col-platinum"></span></f:case>
+                            <f:case value="1"><span class="fa fa-star col-gold"></span></f:case>
+                            <f:case value="2"><span class="fa fa-star col-silver"></span></f:case>
+                            <f:case value="3"><span class="fa fa-star col-book"></span></f:case>
+                        </f:switch>
+                    </a>
+                </div>
+            </li>
+        </f:for>
+    </ul>
+</div>
+<f:comment>
+        <li>
+            <div class="item">
+                <img src="/typo3camp/fileadmin/typo3camp/img/logos/logo_janda.png" alt="logo1">
+                <span class="fa fa-star"></span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <img src="/typo3camp/fileadmin/typo3camp/img/logos/logo_techdivision.png" alt="logo2">
+                <span class="fa fa-heart"></span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <img src="/typo3camp/fileadmin/typo3camp/img/logos/logo_jweiland.png" alt="logo3">
+                <span class="fa fa-heart"></span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <img src="/typo3camp/fileadmin/typo3camp/img/logos/logo_jcmedia.png" alt="logo4">
+                <span class="fa fa-heart"></span>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <img src="/typo3camp/fileadmin/typo3camp/img/logos/logo_jweiland.png" alt="logo5">
+                <span class="fa fa-heart"></span>
+            </div>
+        </li>
+</f:comment>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-25T19:11:30Z" product-name="t3cmsponsor">
+		<header/>
+		<body>
+			<trans-unit id="tx_t3cmsponsor_domain_model_sponsor">
+				<source>Sponsor</source>
+			</trans-unit>
+			<trans-unit id="tx_t3cmsponsor_domain_model_sponsor.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_t3cmsponsor_domain_model_sponsor.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="tx_t3cmsponsor_domain_model_sponsor.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_t3cmsponsor_domain_model_sponsor.url">
+				<source>Url</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
